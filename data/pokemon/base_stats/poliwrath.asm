@@ -1,0 +1,20 @@
+	db POLIWRATH ; 062
+
+	db  90,  85,  95,  70,  70,  90
+	;   hp  atk  def  spd  sat  sdf
+
+	db WATER, FIGHTING ; type
+	db 45 ; catch rate
+	db 185 ; base exp
+	db NO_ITEM, KINGS_ROCK ; items
+	db GENDER_F50 ; gender ratio
+	
+	db 20 ; step cycles to hatch
+	
+	INCBIN "gfx/pokemon/poliwrath/front.dimensions"
+	db GROWTH_MEDIUM_SLOW ; growth rate
+	dn EGG_WATER_1, EGG_WATER_1 ; egg groups
+
+	; tm/hm learnset
+	tmhm DYNAMICPUNCH, HEADBUTT, CURSE, TOXIC, ROCK_SMASH, HIDDEN_POWER, BODY_SLAM, BLIZZARD, HYPER_BEAM, ICY_WIND, PROTECT, RAIN_DANCE, FRUSTRATION, EARTHQUAKE, RETURN, PSYCHIC_M, PROTECT, DOUBLE_TEAM, ICE_PUNCH, SWAGGER, SLEEP_TALK, DEFENSE_CURL, REST, ATTRACT, THIEF, DOUBLE_EDGE, BUBBLEBEAM, SUBMISSION, COUNTER, SEISMIC_TOSS, SURF, STRENGTH, WHIRLPOOL, WATERFALL, ICE_BEAM
+	; end

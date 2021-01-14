@@ -1,0 +1,20 @@
+	db URSARING ; 217
+
+	db  90, 130,  75,  55,  75,  75
+	;   hp  atk  def  spd  sat  sdf
+
+	db NORMAL, NORMAL ; type
+	db 60 ; catch rate
+	db 189 ; base exp
+	db NO_ITEM, NO_ITEM ; items
+	db GENDER_F50 ; gender ratio
+	
+	db 20 ; step cycles to hatch
+	
+	INCBIN "gfx/pokemon/ursaring/front.dimensions"
+	db GROWTH_MEDIUM_FAST ; growth rate
+	dn EGG_GROUND, EGG_GROUND ; egg groups
+
+	; tm/hm learnset
+	tmhm DYNAMICPUNCH, HEADBUTT, CURSE, ROLLOUT, ROAR, TOXIC, ZAP_CANNON, ROCK_SMASH, HIDDEN_POWER, SUNNY_DAY, BODY_SLAM, HYPER_BEAM, PROTECT, FRUSTRATION, EARTHQUAKE, RETURN, DIG, ROCK_SLIDE, DOUBLE_TEAM, ICE_PUNCH, SWAGGER, SLEEP_TALK, SWIFT, DEFENSE_CURL, THUNDERPUNCH, STONE_EDGE, REST, ATTRACT, THIEF, FIRE_PUNCH, FURY_CUTTER, SWORDS_DANCE, DOUBLE_EDGE, SUBMISSION, COUNTER, CUT, STRENGTH
+	; end

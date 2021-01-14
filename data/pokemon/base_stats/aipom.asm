@@ -1,0 +1,20 @@
+	db AIPOM ; 190
+
+	db  65,  90,  55,  105,  55,  55 ; 425
+	;   hp  atk  def  spd  sat  sdf
+
+	db NORMAL, NORMAL ; type
+	db 45 ; catch rate
+	db 94 ; base exp
+	db NO_ITEM, NO_ITEM ; items
+	db GENDER_F50 ; gender ratio
+	
+	db 20 ; step cycles to hatch
+	
+	INCBIN "gfx/pokemon/aipom/front.dimensions"
+	db GROWTH_FAST ; growth rate
+	dn EGG_GROUND, EGG_GROUND ; egg groups
+
+	; tm/hm learnset
+	tmhm DYNAMICPUNCH, HEADBUTT, CURSE, TOXIC, ZAP_CANNON, ROCK_SMASH, HIDDEN_POWER, SUNNY_DAY, BODY_SLAM, PROTECT, FRUSTRATION, IRON_TAIL, THUNDER, RETURN, SHADOW_BALL, PROTECT, DOUBLE_TEAM, ICE_PUNCH, SWAGGER, SLEEP_TALK, SWIFT, DEFENSE_CURL, THUNDERPUNCH, DREAM_EATER, REST, ATTRACT, THIEF, FIRE_PUNCH, FURY_CUTTER, NIGHTMARE, DOUBLE_EDGE, BUBBLEBEAM, COUNTER, BOUNCE, THUNDER_WAVE, CUT, STRENGTH, THUNDERBOLT
+	; end

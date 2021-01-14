@@ -1,0 +1,20 @@
+	db STANTLER ; 234
+
+	db  73,  95,  62,  85,  85,  65
+	;   hp  atk  def  spd  sat  sdf
+
+	db NORMAL, NORMAL ; type
+	db 45 ; catch rate
+	db 165 ; base exp
+	db NO_ITEM, NO_ITEM ; items
+	db GENDER_F50 ; gender ratio
+	
+	db 20 ; step cycles to hatch
+	
+	INCBIN "gfx/pokemon/stantler/front.dimensions"
+	db GROWTH_SLOW ; growth rate
+	dn EGG_GROUND, EGG_GROUND ; egg groups
+
+	; tm/hm learnset
+	tmhm HEADBUTT, CURSE, ROAR, TOXIC, PSYCH_UP, HIDDEN_POWER, SUNNY_DAY, BODY_SLAM, PROTECT, RAIN_DANCE, CALM_MIND, FRUSTRATION, SOLARBEAM, THUNDER, EARTHQUAKE, RETURN, PSYCHIC_M, SHADOW_BALL, PROTECT, DOUBLE_TEAM, SWAGGER, SLEEP_TALK, SWIFT, DREAM_EATER, REST, ATTRACT, THIEF, NIGHTMARE, SWORDS_DANCE, DOUBLE_EDGE, COUNTER, BOUNCE, THUNDER_WAVE, FLASH, THUNDERBOLT
+	; end
